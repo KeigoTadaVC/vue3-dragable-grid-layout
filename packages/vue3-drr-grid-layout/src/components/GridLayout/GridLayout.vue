@@ -535,11 +535,6 @@ onMounted(() => {
     })
   })
 })
-
-// expose
-defineExpose({
-  dragEvent
-})
 </script>
 
 <style>
