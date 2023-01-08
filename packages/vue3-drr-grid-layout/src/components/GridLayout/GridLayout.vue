@@ -469,7 +469,7 @@ const dragEvent = ([eventName, id, x, y, h, w]: GridLayoutEvent): void => {
       isDragging.value = false
     })
   }
-
+  defineExpose({ dragEvent })
   emit('update:layout', moveElement(props.layout, l, x, y, true, props.horizontalShift, props.preventCollision))
 
   compact(props.layout, props.verticalCompact)
