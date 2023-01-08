@@ -57,7 +57,8 @@ import {
   onMounted,
   provide,
   ref,
-  watch
+  watch,
+  defineExpose
 } from 'vue'
 import { addWindowEventListener, removeWindowEventListener } from '../../helpers/DOM'
 import {
